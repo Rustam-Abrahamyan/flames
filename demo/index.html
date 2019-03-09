@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flames</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<ul id="colors">
+    <li style="background-color: rgb(160, 10, 10)" class="active" onclick="color='rgb(5, 1, 1)';composite='lighter';lineWidth=1.0;"></li>
+    <li style="background-color: rgb(40, 200, 20)" onclick="color='rgb(2, 6, 1)';composite='lighter';lineWidth=1.0;"></li>
+    <li style="background-color: rgb(10, 10, 80)" onclick="color='rgb(1, 2, 8)';composite='lighter';lineWidth=1.0;"></li>
+    <li style="background-color: rgb(200, 150, 50)" onclick="color='rgb(4, 3, 1)';composite='lighter';lineWidth=1.0;"></li>
+    <li style="background-color: rgb(75, 25, 100)" onclick="color='rgb(3, 1, 4)';composite='lighter';lineWidth=1.0;"></li>
+    <li style="background-color: rgb(25, 100, 75)" onclick="color='rgb(1, 4, 3)';composite='lighter';lineWidth=1.0;"></li>
+    <li style="background-color: #000" onclick="color='rgba(0, 0, 0, 0.6);';composite='source-over';lineWidth=0.1;"></li>
+    <li style="background-color: rgb(255, 255, 255)" onclick="color='rgb(3, 3, 3)';composite='lighter';lineWidth=1.0;"></li>
+</ul>
+
+<div class="buttons-wrap">
+    <a href="#" id="clear" class="button" onclick="window.clear();">Clear</a>
+    <a href="#" id="download" class="button" onclick="window.download();">Download</a>
+</div>
+
+<canvas id="canvas" width=800 height=600></canvas>
+
+<script src="../main.js"></script>
+
+</body>
+</html>
